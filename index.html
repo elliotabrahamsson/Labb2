@@ -4,15 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Iron Festival</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a class="active" href="#Hem">Hem</a>
-      <a href="#För-utställare">För utställare</a>
-      <a href="#För-besökare">För besökare</a>
-      <a href="#Om-mässan">Om mässan</a>
-    </nav>
+    <header>
+      <nav>
+        <input type="checkbox" id="meny" />
+        <label for="meny">
+          <i class="fa-solid fa-bars" style="color: white"></i>
+        </label>
+        <ul>
+          <li>
+            <a href="#hem" class="active">Hem</a>
+          </li>
+          <li>
+            <a href="#besökare">För-besökare</a>
+          </li>
+          <li>
+            <a href="#utställare">För-utställare</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <img
       class="header-img"
       src="media/PL_-_deadlift_edited-1200.jpg"
