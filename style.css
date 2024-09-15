@@ -75,25 +75,32 @@ ul a:hover {
   border-radius: 10px;
 }
 
+.header-img {
+  overflow: hidden;
+  object-fit: cover;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  width: 1100px;
+  height: 600px;
+  background-position: center;
+  background-image: url(media/PL_-_deadlift_edited-1200.jpg);
+  border-radius: 10px;
+}
+
 main {
   position: absolute;
   grid-area: main;
   background-color: #0a0a0c;
   color: white;
-  margin-top: 20%;
-  margin-left: 30%;
+  margin-top: 25%;
+  margin-left: 15%;
   border-radius: 10px;
 }
 
-.header-img {
-  margin-top: 2rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  width: 90%;
-  height: 70%;
-  background-position: center;
-  background-size: cover;
-  background-image: url(media/PL_-_deadlift_edited-1200.jpg);
+.content {
+  margin: 5%;
+  width: 400px;
 }
 
 footer {
