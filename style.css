@@ -78,7 +78,7 @@ ul a:hover {
 .header-img {
   overflow: hidden;
   object-fit: cover;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-left: 4rem;
   margin-right: 4rem;
   width: 1100px;
@@ -91,16 +91,31 @@ ul a:hover {
 main {
   position: absolute;
   grid-area: main;
-  background-color: #0a0a0c;
   color: white;
-  margin-top: 25%;
+  margin-top: 30%;
   margin-left: 15%;
+}
+
+main h1 {
+  font-family: "Arial Black", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 55px;
+  margin-bottom: 1em;
+  text-shadow: 2px 2px 7px #0a0a0c;
+}
+
+.intro-content {
+  background-color: #0a0a0c;
+  padding: 1em;
+  width: 400px;
   border-radius: 10px;
 }
 
-.content {
-  margin: 5%;
-  width: 400px;
+.intro-content h2 {
+}
+
+.intro-content p {
+  margin-top: 3%;
+  margin-right: 5%;
 }
 
 footer {
