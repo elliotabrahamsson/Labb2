@@ -8,7 +8,6 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background: linear-gradient(310deg, #171717, #272727);
   background-repeat: no-repeat;
-  background-attachment: fixed;
 
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -22,22 +21,21 @@ body {
 header {
   grid-area: header;
   background-color: black;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
   display: flex;
-  justify-content: center;
-  background-color: black;
-  padding: 1em;
-  height: auto;
-  margin-right: 50%;
-  margin-left: 50%;
+  justify-content: space-between;
+  margin-bottom: 1%;
+  display: block;
 }
 
 nav a {
   text-decoration: none;
+  text-transform: capitalize;
   color: white;
-  text-align: justify;
 }
 
 input[type="checkbox"] {
@@ -53,37 +51,29 @@ label {
 ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 3em;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-ul a {
-  padding: 0.5em;
-  display: block;
-  text-align: center;
 }
 
 ul a:hover {
-  border-bottom: 2px solid #272727;
-  border-radius: 8px;
+  border-bottom: 2px solid white;
+  border-radius: 10px;
 }
 
 .active {
   background-color: #272727;
-  border-radius: 10px;
 }
 
 .header-img {
+  display: block;
   overflow: hidden;
   object-fit: cover;
   margin-top: 2rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  width: 1100px;
-  height: 600px;
-  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  height: 800px;
+  object-position: 0% 25%;
   background-image: url(media/PL_-_deadlift_edited-1200.jpg);
   border-radius: 10px;
 }
@@ -92,13 +82,14 @@ main {
   position: absolute;
   grid-area: main;
   color: white;
-  margin-top: 30%;
+  margin-top: 25%;
   margin-left: 15%;
+  margin-bottom: 10%;
 }
 
 main h1 {
   font-family: "Arial Black", Helvetica, Arial, Lucida, sans-serif;
-  font-size: 55px;
+  font-size: 70px;
   margin-bottom: 1em;
   text-shadow: 2px 2px 7px #0a0a0c;
 }
@@ -108,14 +99,18 @@ main h1 {
   padding: 1em;
   width: 400px;
   border-radius: 10px;
+  width: fit-content;
+  max-width: 800px;
 }
 
 .intro-content h2 {
+  font-size: 50px;
 }
 
 .intro-content p {
   margin-top: 3%;
   margin-right: 5%;
+  font-size: 20px;
 }
 
 footer {
@@ -127,25 +122,28 @@ footer {
   background-color: black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 980px) {
   label {
     display: block;
+    margin-right: 10%;
   }
   ul {
-    font-size: 1.2em;
+    font-size: 20px;
     position: absolute;
+    border-radius: 10px;
     left: -100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: #272727;
-    gap: 2em;
-    top: 60px;
-    width: 100%;
-    height: calc(100vh - 50px);
+    width: 20%;
+    height: calc(100vh - 50vh);
     transition: 0.5s;
   }
-  input-[type="checkbox"]:checked ~ ul {
-    right: 0;
+  input[type="checkbox"]:checked ~ ul {
+    left: 0;
+  }
+  .header-img {
+    width: 800px;
+    height: 400px;
   }
 }
