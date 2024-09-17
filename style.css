@@ -14,8 +14,8 @@ body {
   grid-template-areas:
     "header"
     "main"
+    "guest"
     "footer";
-  height: 100vh;
 }
 
 header {
@@ -98,11 +98,11 @@ main {
 .intro-content {
   background-color: #141414;
   position: absolute;
-  top: 32%;
+  top: 40%;
   left: 0;
   right: 0;
   padding: 0.5em;
-  width: 80%;
+  width: 95%;
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
@@ -110,11 +110,37 @@ main {
   font-size: large;
 }
 
-.intro-content p {
+.intro-content,
+.guests p {
   margin-top: 5%;
   font-size: small;
 }
 
+.guests {
+  background-color: #141414;
+  border-radius: 10px;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15%;
+  width: 95%;
+  left: 0;
+  right: 0;
+  grid-area: guest;
+}
+
+.guest-title {
+  grid-area: Title;
+  padding: 1rem;
+}
+
+.guest-img {
+  grid-area: img;
+}
+
+.cbum-about,
+.jay-about {
+}
 footer {
   margin-top: 2em;
   color: white;
@@ -122,9 +148,10 @@ footer {
   padding: 1rem;
   text-align: center;
   background-color: black;
+  width: 100%;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 980px) {
   label {
     display: block;
     margin-left: 5%;
