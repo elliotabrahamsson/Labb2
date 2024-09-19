@@ -103,7 +103,6 @@ main {
   right: 0;
   padding: 0.5em;
   width: fit-content;
-  margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
@@ -202,6 +201,60 @@ footer {
     font-size: xx-large;
   }
 
+  .guests {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      ". title ."
+      ". guests-desc ."
+      "cbum . jay"
+      "cbum-title . jay-title"
+      "cbum-about . jay-about";
+  }
+
+  #cbum-title {
+    grid-area: cbum-title;
+    font-size: xx-large;
+  }
+  #cbum-img {
+    grid-area: cbum;
+    display: block;
+    object-fit: cover;
+  }
+
+  #jay-img {
+    grid-area: jay;
+  }
+  #jay-title {
+    grid-area: jay-title;
+    font-size: xx-large;
+  }
+
+  .cbum-about {
+    grid-area: cbum-about;
+    margin-bottom: 5%;
+    font-size: xx-large;
+    padding: 0.5rem;
+  }
+
+  .jay-about {
+    grid-area: jay-about;
+    margin-bottom: 2%;
+    padding: 0.5rem;
+  }
+
+  .Name-titles {
+    grid-area: title;
+    margin-top: 2%;
+    font-size: x-large;
+  }
+
+  .guests-description {
+    grid-area: guests-desc;
+    font-size: x-large;
+  }
+
   .intro-content {
     top: 60%;
     right: 60%;
@@ -213,6 +266,8 @@ footer {
   }
 
   .guest-img {
-    width: 20%;
+    width: 90%;
+    margin-right: 2rem;
+    margin-top: 10%;
   }
 }
