@@ -121,16 +121,20 @@ main {
   margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15%;
+  margin-bottom: 2%;
   width: 95%;
   left: 0;
   right: 0;
   grid-area: guest;
 }
 
+.Name-titles {
+  text-decoration: underline;
+}
 .guest-title {
   grid-area: Title;
-  padding: 1rem;
+  padding: 3%;
+  text-decoration: underline;
 }
 
 .guest-img {
@@ -144,9 +148,10 @@ main {
   margin-left: auto;
 }
 
-.cbum-about,
 .jay-about {
+  padding: 3%;
 }
+
 footer {
   margin-top: 2em;
   color: white;
@@ -208,11 +213,14 @@ footer {
     grid-template-areas:
       ". title ."
       ". guests-desc ."
-      "cbum . jay"
-      "cbum-title . jay-title"
-      "cbum-about . jay-about";
+      "cbum 0 jay"
+      "cbum-title 0 jay-title"
+      "cbum-about 0 jay-about";
   }
 
+  .guests p {
+    font-size: larger;
+  }
   #cbum-title {
     grid-area: cbum-title;
     font-size: xx-large;
