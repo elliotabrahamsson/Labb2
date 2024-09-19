@@ -6,7 +6,7 @@
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background: linear-gradient(310deg, #171717, #272727);
+  background: linear-gradient(310deg, rgb(18, 18, 18), rgb(59, 56, 56));
   background-repeat: no-repeat;
 
   display: grid;
@@ -123,8 +123,6 @@ main {
   margin-right: auto;
   margin-bottom: 2%;
   width: 95%;
-  left: 0;
-  right: 0;
   grid-area: guest;
 }
 
